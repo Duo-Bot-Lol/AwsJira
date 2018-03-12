@@ -1,3 +1,13 @@
-<p>
-  header works!
-</p>
+<p-sidebar [(visible)]="display">
+  <app-side-menu></app-side-menu>
+</p-sidebar>
+
+
+<p-toolbar>
+  <div style="display:flex">
+    <button type="text" class="ui-button-secondary" (click)="display = true" pButton icon="fa fa-2x fa-bars"></button>
+  <h4>iBlue Consulting</h4>
+  </div>
+
+
+</p-toolbar>

@@ -12,8 +12,17 @@ import { MainPage } from '../Paginas/main/main.component';
 import { LoginPage } from '../Paginas/login/login.component';
 //Componentes
 import { HeaderComponent } from '../Componentes/header/header.component';
+import { SideMenuComponent } from '../Componentes/side-menu/side-menu.component';
+//PrimeNg
+import { ToolbarModule } from 'primeng/toolbar';
+import { ButtonModule } from 'primeng/button';
+import { SidebarModule } from 'primeng/sidebar';
+import { CardModule } from 'primeng/card';
+//Outros Componentes
+import { DragulaModule } from '../../node_modules/ng2-dragula/ng2-dragula'
 //Rotas
 import { RotasModule } from './rotas.module';
+
 
 
 
@@ -22,6 +31,7 @@ import { RotasModule } from './rotas.module';
     AppComponent,
     MainPage,
     HeaderComponent,
+    SideMenuComponent,
     LoginPage
   ],
   imports: [
@@ -30,6 +40,13 @@ import { RotasModule } from './rotas.module';
     NoopAnimationsModule,
     RotasModule,
     FormsModule,
+//Dragula
+    DragulaModule,
+//PrimeNg
+    ToolbarModule,
+    ButtonModule,
+    SidebarModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
