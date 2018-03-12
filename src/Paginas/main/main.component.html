@@ -37,14 +37,15 @@
                 <button pButton type="button" label="Cancel" icon="fa-close" class="ui-button-secondary"></button>
             </p-footer>
         </p-card>
-        <div class='container coluna2 teste' [dragula]='"bag-task1"' [dragulaModel]='MagiaPlayer' [dragulaOptions]="options2">
-            <p-card title="Advanced Card" subtitle="Subtitle" styleClass="ui-card-shadow" class="Card99" *ngFor="let text of MagiaPlayer2">
-                <p-header [innerHtml]='text.nome'></p-header>
-                <p-footer>
-                    <button pButton type="button" label="Save" icon="fa-check"></button>
-                    <button pButton type="button" label="Cancel" icon="fa-close" class="ui-button-secondary"></button>
-                </p-footer>
-            </p-card>
+    </div>
+    <div class='container coluna2 teste' [dragula]='"bag-task1"' [dragulaModel]='MagiaPlayer' [dragulaOptions]="options2">
+        <p-card title="Advanced Card" subtitle="Subtitle" styleClass="ui-card-shadow" class="Card99" *ngFor="let text of MagiaPlayer2">
+            <p-header [innerHtml]='text.nome'></p-header>
+            <p-footer>
+                <button pButton type="button" label="Save" icon="fa-check"></button>
+                <button pButton type="button" label="Cancel" icon="fa-close" class="ui-button-secondary"></button>
+            </p-footer>
+        </p-card>
     </div>
   </div>
 
